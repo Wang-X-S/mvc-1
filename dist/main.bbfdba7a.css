@@ -1,0 +1,105 @@
+#app1 {
+  border: 1px solid red;
+ 
+}
+#app1 .output {
+    
+}
+#app1 .actions {
+  
+}
+
+#app2{
+border:1px solid blue;
+
+}
+#app2 .tab-bar{
+
+display:flex;
+}
+#app2 .tab-bar>li{
+    border:1px solid black;
+    width:50%
+}
+#app2 .tab-bar>li.selected{
+    background: coral;
+
+}
+#app2 .tab-content{
+
+}
+#app2 .tab-content>li{
+    display:none;
+}
+#app2 .tab-content>li.active{
+    display: block;
+}
+#app3{
+
+}
+#app3 .square{
+    border:1px solid red;
+    width:10vw;
+    height:10vw;
+    margin-left:40%;
+    margin-top:30%;
+    transition:transform 1s;/* 过渡 */
+    
+}
+#app3 .square.active{
+    transform:translateX(15vw)
+    
+}
+#app4{}
+/* 渐变 */
+@keyframes change{
+    0%{
+        background: red;
+    }
+    100%{
+        background: blue;
+    }
+}
+#app4 .circle{
+    width:20vw;
+    height:20vw;
+    border-radius:50%;
+    border:1px solid red;
+    margin: 25%;
+    /* 加入动画 */
+    
+}
+#app4 .circle.active{
+    animation:change 1s infinite alternate linear;
+}
+
+body{
+    overflow:hidden;
+}
+body > .page{
+ display:flex; 
+ flex-wrap:wrap; 
+}
+body > .page > section{
+    width:50vw;
+    height:50vh;
+    border:1px solid gray
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/*# sourceMappingURL=main.bbfdba7a.css.map */
